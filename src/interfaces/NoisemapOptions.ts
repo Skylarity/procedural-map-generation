@@ -1,5 +1,7 @@
 export interface NoisemapOptions {
-	seed: string | number;
+	seed: number | string;
+	octaves: number[];
 	useHeightCurve?: boolean;
 	useDistance?: boolean;
+	normalize?: boolean;
 }

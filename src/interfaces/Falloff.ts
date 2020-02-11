@@ -4,7 +4,7 @@ export interface Falloff {
 	enabled: boolean;
 	method: FalloffType;
 	distance: number;
-	a: number;
-	b: number;
-	c: number;
+	smoothness: number;
+	intensity: number;
+	amplification: number;
 }

@@ -1,4 +1,4 @@
 export enum FalloffType {
 	Manhattan,
-	Euclidian
+	Euclidean
 }
