@@ -63,7 +63,7 @@ export class ProceduralMap {
 			maxHeight: 0.1,
 			moisture: 1,
 			shadows: false,
-			color: d3.rgb("#35c2fa")
+			color: d3.rgb("#44b0f2")
 		},
 		{
 			label: "Water",
@@ -360,13 +360,13 @@ export class ProceduralMap {
 		} else {
 			// Get possible biomes for elevation
 			let biomeChoices: Biome[] = [];
-			for (let i = 0; i < this.biomes.length; i++) {
+			for (let i = 0; i < this.biomes.length; ++i) {
 				if (elevation <= this.biomes[i].maxHeight) {
 					biomeChoices.push(this.biomes[i]);
 				}
 			}
 			// Get correct color for elevation and moisture
-			for (let i = 0; i < biomeChoices.length; i++) {
+			for (let i = 0; i < biomeChoices.length; ++i) {
 				biome = biomeChoices[i];
 				if (moisture <= biomeChoices[i].moisture) {
 					break;
