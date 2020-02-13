@@ -54,6 +54,7 @@ export class ProceduralMap {
 	};
 
 	/* Color */
+	generatedImage: ImageData | null = null;
 	showShadows: boolean = true;
 	shadowIntensity: number = 0.15;
 	biomes: Biome[] = [
@@ -309,7 +310,8 @@ export class ProceduralMap {
 			});
 
 			// Convert regular array to usable image
-			return new ImageData(Uint8ClampedArray.from(image), this.size, this.size);
+			this.generatedImage = new ImageData(Uint8ClampedArray.from(image), this.size, this.size);
+			return this.generatedImage;
 		} else {
 			return null;
 		}
