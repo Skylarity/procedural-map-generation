@@ -20,7 +20,7 @@
 	},
 	"dependencies": {
 		"alea": "^1.0.0",
-		"d3": "^5.15.0",
+		"d3": "^7.6.1",
 		"simplex-noise": "^2.4.0"
 	},
 	"devDependencies": {
